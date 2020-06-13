@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed5da598-860c-4a10-a402-49d39550b2f3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dDDtJ2dG2XsoMc56MyNO9KDBrg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../startpage" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed5da598-860c-4a10-a402-49d39550b2f3" name="Default Changelist" comment="" />
+      <created>1591950982082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591950982082</updated>
+      <workItem from="1591950984096" duration="15524000" />
+      <workItem from="1591991986672" duration="19000" />
+      <workItem from="1592043483822" duration="315000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="903" y="173" key="FileChooserDialogImpl" timestamp="1592043797405">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="903" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1592043797405" />
+    <state x="902" y="55" key="RollbackChangesDialog" timestamp="1591985782784">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="902" y="55" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1591985782784" />
+    <state x="779" y="191" key="run.anything.popup" timestamp="1591978850040">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="779" y="191" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1591978850040" />
+  </component>
+</project>
