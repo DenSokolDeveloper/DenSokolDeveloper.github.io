@@ -2,13 +2,10 @@ $(function () {
 
     $('.burger').on('click',function (event) {
         event.preventDefault();
-        $('.burger-content').toggleClass('active');
+        $(this).toggleClass('active');
+        $('.burger-content').toggleClass('active').animate({left: '0'},600);
+        $('.menu').toggleClass('active');
+        $('.burger__item').toggleClass('active');
     });
-    $('.slider').slick({
-       vertical: true,
-       verticalSwiping: true,
-       slidesToShow: 1,
-       dots: true,
-       arrows: false
-    });
+
 });
