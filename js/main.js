@@ -1,5 +1,4 @@
 $(function () {
-    $(document).ready(function() {
 
         //E-mail Ajax Send
         $("form").submit(function() { //Change
@@ -17,8 +16,6 @@ $(function () {
             });
             return false;
         });
-
-    });
 
     //MENU
     $('.burger').on('click',function (event) {
