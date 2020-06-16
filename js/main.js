@@ -16,4 +16,13 @@ $(function () {
         },2000)
     })
     //SKILL-BAR
+
+    /*fullpage.js*/
+    $('#fullpage').fullpage({
+        //options here
+        autoScrolling:true,
+        scrollHorizontally: true,
+        sectionsColor: ['green','yellow','black']
+    });
+    /*fullpage.js*/
 });
