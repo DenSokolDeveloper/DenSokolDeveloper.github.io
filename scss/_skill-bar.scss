@@ -1,0 +1,54 @@
+.skill {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 35px;
+  border-raidus: 3px;
+  background: #eee;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.skill__title {
+  position: absolute;
+  font-size: 13px;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: #6adcfa;
+  color: #fff;
+}
+
+.skill__title span {
+  display: block;
+  background: rgba(0,0,0,0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skill-bar {
+  height: 35px;
+  border-radius: 3px;
+  width: 0;
+  background-color: #6adcfa;
+}
+
+.skills-percent {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 11px;
+  height: 55px;
+  line-height: 35px;
+  color: #444;
+  color: rgba(0,0,0,0.4);
+}
