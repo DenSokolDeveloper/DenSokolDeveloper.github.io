@@ -36,4 +36,12 @@ $(function () {
 
     });
     /*accordion*/
+    /*slider*/
+    $('.works__slider').slick({
+       infinite: true,
+        fade: true,
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="../img/back.svg" alt="">',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="../img/next.svg" alt="">'
+    });
+    /*slider*/
 });

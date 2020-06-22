@@ -20,10 +20,10 @@
         </div>
         <ul class="header-nav-list">
             <li class="header-nav-list__item">
-                <a href="#" target="_blank" class="link">Home</a>
+                <a href="index.html" class="link">Home</a>
             </li>
             <li class="header-nav-list__item dropdown">
-                <a href="#" target="_blank" class="link">Works</a>
+                <a href="#" class="link">Works</a>
                 <i class="fas fa-chevron-down"></i>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
@@ -32,7 +32,13 @@
                 </div>
             </li>
             <li class="header-nav-list__item">
-                <a href="#" target="_blank" class="link" >About me</a>
+                <a href="skills.html" class="link" >Skills</a>
+            </li>
+            <li class="header-nav-list__item">
+                <a href="#" class="link" >About me</a>
+            </li>
+            <li class="header-nav-list__item">
+                <a href="#" class="link" >Contacts</a>
             </li>
         </ul>
         <div class="header-nav-switch">
@@ -52,25 +58,7 @@
         <a href="#">2</a>
         <a href="#">3</a>
     </div>
-    <section class="header-section">
-        <div class="container">
-            <div class="wrapper">
-                <div class="header-section__img">
-                    <img src="img/me.png" alt="me">
-                    <a href="#" class="btn">Learn more
-                    </a>
-                    <img src="img/mouse.png" class="mouse" alt="mouse">
-                    <p class="scroll vertical">
-                        scroll
-                    </p>
-                </div>
-                <div class="header-section-info">
-                    <h1 class="title">Hi everyone!</h1>
-                    <h5 class="suptitle">I'm a web ui developer based in Kharkiv, Ukraine. I have a passion for web developing and love to create for web and mobile devices.</h5>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <div class="fab">
          <span class="fab-action-button">
         <i class="fab-action-button__icon"></i>
@@ -100,190 +88,80 @@
     </div>
 </header>
 <div class="page">
-    <section class="section tech">
+    <section class="section intro">
         <div class="container">
             <div class="wrapper">
-                <div class="number  vertical">01</div>
-                <div class="info">
-                    <div class="info__title before">technical skills</div>
-                    <p class="info__text before">These are my technical skills. I focus on the study of Javascript and the Vue.js framework. You can also find examples of my markup work. Projects were created from 0.</p>
-                    <a href="#" class="btn">learn more</a>
+                <div class="section__img">
+                    <img src="img/me.png" class="me" alt="me">
+                    <a href="#" class="btn">Learn more
+                    </a>
+<!--                    <img src="img/mouse.png" class="mouse" alt="mouse">-->
+
+                    <svg class="mouse" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="mouse-clicker 1" clip-path="url(#clip0)">
+                            <path id="Vector" d="M255.602 0C172.559 0 105 67.5586 105 150.602V361.398C105 444.441 172.559 512 255.602 512C338.645 512 406.203 444.441 406.203 361.398V150.602C406.203 67.5586 338.645 0 255.602 0ZM375.484 361.398C375.484 427.5 321.703 481.281 255.602 481.281C189.5 481.281 135.719 427.5 135.719 361.398V150.602C135.719 84.5 189.5 30.7188 255.602 30.7188C321.703 30.7188 375.484 84.5 375.484 150.602V361.398Z" fill="black"/>
+                            <g id="scroll">
+                                <path id="Vector_2" d="M255.605 101.852C247.121 101.852 240.246 108.727 240.246 117.211V187.906C240.246 196.387 247.121 203.266 255.605 203.266C264.086 203.266 270.965 196.387 270.965 187.906V117.211C270.965 108.727 264.09 101.852 255.605 101.852Z" fill="black"/>
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="512" height="512" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <p class="scroll vertical">
+                        scroll
+                    </p>
                 </div>
-                <div class="bars">
-                    <div class="skill" data-percent="85%">
-                        <div class="skill__title" style="background: #FF8C00;"><span>HTML/HTML5</span></div>
-                        <div class="skill-bar" style="background: #FF8C00;"></div>
-                        <div class="skills-percent">85%</div>
-                    </div>
-                    <div class="skill" data-percent="82%">
-                        <div class="skill__title" style="background: #00BFFF;"><span>CSS3</span></div>
-                        <div class="skill-bar" style="background: #00BFFF;"></div>
-                        <div class="skills-percent">82%</div>
-                    </div>
-                    <div class="skill" data-percent="90%">
-                        <div class="skill__title" style="background: #FFD700;"><span>JavaScript</span></div>
-                        <div class="skill-bar" style="background: #FFD700;"></div>
-                        <div class="skills-percent">90%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section graph">
-        <div class="container">
-            <div class="wrapper revers">
-                <div class="number  vertical">02</div>
-                <div class="info">
-                    <div class="info__title after">graphics & design skills</div>
-                    <p class="info__text after">I make markup from Photoshop and Figma. It will not be difficult for me to make any changes to the design of the project.</p>
-                    <a href="#" class="btn">learn more</a>
-                </div>
-                <div class="bars">
-                    <div class="skill" data-percent="87%">
-                        <div class="skill__title" style="background: #FF8C00;"><span>FIGMA</span></div>
-                        <div class="skill-bar" style="background: #FF8C00;"></div>
-                        <div class="skills-percent">87%</div>
-                    </div>
-                    <div class="skill" data-percent="91%">
-                        <div class="skill__title" style="background: #00BFFF;"><span>PHOTOSHOP</span></div>
-                        <div class="skill-bar" style="background: #00BFFF;"></div>
-                        <div class="skills-percent">91%</div>
-                    </div>
+                <div class="section-info">
+                    <h1 class="title">Hi,<br>
+                        I'm Denis,<br>
+                        web developer.
+                    </h1>
+                    <h2 class="suptitle">Front End Developer / Freelancer</h2>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section frame">
+    <section class="section cando" id="cando">
         <div class="container">
-            <div class="wrapper">
-                <div class="number  vertical">03</div>
-                <div class="info">
-                    <div class="info__title before">framework skills</div>
-                    <p class="info__text before">I actively use Vue.js to create online stores, blog sites, business cards, landing pages and multi-page sites.</p>
-                    <a href="#" class="btn">learn more</a>
-                </div>
-                <div class="bars">
-                    <div class="skill" data-percent="82%">
-                        <div class="skill__title" style="background: #FF8C00;"><span>VUE.JS</span></div>
-                        <div class="skill-bar" style="background: #FF8C00;"></div>
-                        <div class="skills-percent">82%</div>
-                    </div>
-                    <div class="skill" data-percent="85%">
-                        <div class="skill__title" style="background: #FF8C00;"><span>NUXT.JS</span></div>
-                        <div class="skill-bar" style="background: #FF8C00;"></div>
-                        <div class="skills-percent">85%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section libs">
-        <div class="container">
-            <div class="wrapper revers">
-                <div class="number  vertical">04</div>
-                <div class="info">
-                    <div class="info__title after">libraries skills</div>
-                    <p class="info__text after">And of course, without libraries as without hands. I use them to add any functionality for the site that I need.</p>
-                    <a href="#" class="btn">learn more</a>
-                </div>
-                <div class="bars">
-                    <div class="skill" data-percent="86%">
-                        <div class="skill__title" style="background: #FF8C00;"><span>BOOTSTRAP4</span></div>
-                        <div class="skill-bar" style="background: #FF8C00;"></div>
-                        <div class="skills-percent">86%</div>
-                    </div>
-                    <div class="skill" data-percent="89%">
-                        <div class="skill__title" style="background: #00BFFF;"><span>JQUERY</span></div>
-                        <div class="skill-bar" style="background: #00BFFF;"></div>
-                        <div class="skills-percent">89%</div>
-                    </div>
-                    <div class="skill" data-percent="79%">
-                        <div class="skill__title" style="background: #FFD700;"><span>BOOTSTRAPVUE</span></div>
-                        <div class="skill-bar" style="background: #FFD700;"></div>
-                        <div class="skills-percent">79%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section project-builder">
-        <div class="container">
-            <div class="wrapper">
-                <div class="number  vertical">05</div>
-                <div class="info">
-                    <div class="info__title before">Project builder using skills</div>
-                    <p class="info__text before">Project builders are great mechanisms to facilitate and increase development speed. I use gulp 4 in any project if it is not on the framework. I understand the task. Also
-                        I have my own functional assembly.</p>
-                    <a href="#" class="btn">learn more</a>
-                </div>
-                <div class="bars">
-                    <div class="skill" data-percent="85%">
-                        <div class="skill__title" style="background: #FF8C00;"><span>GULP 4</span></div>
-                        <div class="skill-bar" style="background: #FF8C00;"></div>
-                        <div class="skills-percent">85%</div>
-                    </div>
-                    <div class="skill" data-percent="70%">
-                        <div class="skill__title" style="background: #00BFFF;"><span>WEBPACK</span></div>
-                        <div class="skill-bar" style="background: #00BFFF;"></div>
-                        <div class="skills-percent">70%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section git">
-        <div class="container">
-            <div class="wrapper revers">
-                <div class="number  vertical">06</div>
-                <div class="info">
-                    <div class="info__title after">Git using skills</div>
-                    <p class="info__text after">I use git very intensely. I have experience in team development and project assembly.</p>
-                    <a href="#" class="btn">learn more</a>
-                </div>
-                <div class="bars">
-                    <div class="skill" data-percent="90%">
-                        <div class="skill__title" style="background: #FF8C00;"><span>GIT</span></div>
-                        <div class="skill-bar" style="background: #FF8C00;"></div>
-                        <div class="skills-percent">90%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section" id="cando">
-        <div class="container">
-            <div class="wrapper">
+            <div class="wrapper column">
                 <div class="section-header">
                     <div class="section-header__title">what i can do</div>
                 </div>
 
                 <div class="cando">
                     <div class="cando__item">
+                        <img src="img/iphone-app-development.png" class="devbg" alt="img">
+                    </div>
+                    <div class="cando__item">
                         <div class="accordion">
                             <div class="accordion__item" data-collapse="#wedo_1">
-                                <div class="accordion__header">
-                                    <img class="accordion__icon" src="images/icons.1_06.png" alt="">
-                                    <div class="accordion__title">Photography</div>
+                                <div class="accordion-header">
+                                    <img class="accordion-header__icon" src="img/web-development.svg" alt="">
+                                    <div class="accordion-header__title">web development</div>
                                 </div>
-                                <div class="accordion__content" id="wedo_1">
+                                <div class="accordion-content" id="wedo_1">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
                             </div>
                             <div class="accordion__item active"  data-collapse="#wedo_2">
-                                <div class="accordion__header">
-                                    <img class="accordion__icon" src="images/icons.1_10.png" alt="">
-                                    <div class="accordion__title">Creativity</div>
+                                <div class="accordion-header">
+                                    <img class="accordion-header__icon" src="img/idea.svg" alt="">
+                                    <div class="accordion-header__title">Creativity</div>
                                 </div>
-                                <div class="accordion__content" id="wedo_2">
+                                <div class="accordion-content" id="wedo_2">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
                             </div>
                             <div class="accordion__item" data-collapse="#wedo_3">
-                                <div class="accordion__header" >
-                                    <img class="accordion__icon" src="images/icons.1_12.png" alt="">
-                                    <div class="accordion__title">Web Design</div>
+                                <div class="accordion-header" >
+                                    <img class="accordion-header__icon" src="img/website-design.svg" alt="">
+                                    <div class="accordion-header__title">Web Design</div>
                                 </div>
-                                <div class="accordion__content" id="wedo_3">
+                                <div class="accordion-content" id="wedo_3">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
                             </div>
@@ -293,8 +171,223 @@
             </div>
         </div>
     </section>
+    <section class="section looking">
+        <div class="container">
+            <div class="wrapper column">
+                <div class="section-header">
+                    <div class="section-header__title">what i'm looking for</div>
+                </div>
+
+                <div class="card">
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__image">
+                                <img src="img/card-developer.jpg" alt="">
+                            </div>
+                            <div class="card__text">Good Team</div>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__image">
+                                <img src="img/card-team.jpg" alt="">
+                            </div>
+                            <div class="card__text">Nice Office</div>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__image">
+                                <img src="img/card-activity.jpg" alt="">
+                            </div>
+                            <div class="card__text">Super activity</div>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__image">
+                                <img src="img/card-freelance.jpg" alt="">
+                            </div>
+                            <div class="card__text">Freelance orders</div>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__image">
+                                <img src="img/card-interesting.jpg" alt="">
+                            </div>
+                            <div class="card__text">Interesting projects</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Contact me</a>
+            </div>
+        </div>
+    </section>
+    <section class="section works">
+        <div class="container">
+            <div class="wrapper column">
+                <div class="section-header">
+                    <div class="section-header__title">previews of my works</div>
+                </div>
+
+                <div class="works">
+                    <div class="works__slider">
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-1.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">Online shop</div>
+                                    <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Nuxt.js</div>
+                                    <div class="slider-item__info-text">This online store is written on the modern Nuht.js framework and the botstrap 4 / bootstrapVie libraries. Implemented work with the backend, and in more detail: appeal to the server, receiving and using data from the database. The site is under active development.</div>
+                                    <a href="#" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-2.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">test task</div>
+                                    <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 & JSON server</div>
+                                    <div class="slider-item__info-text">This test task was performed using asynchronous functions. Work with the user database has been implemented, in more detail: obtaining an array of users, drawing them into a table, functionality for deleting and adding users, and also sorting by any category.</div>
+                                    <a href="#" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-7.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">coffee machine emulator</div>
+                                    <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 </div>
+                                    <div class="slider-item__info-text">Great emulator created using pure javascript. Functionality: greeting, choice of coffee, payment, money operations functional has been implemented - depositing funds, processing, issuing change if necessary, making coffee on a timer.</div>
+                                    <a href="#" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-6.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">Landing Page</div>
+                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
+                                    <div class="slider-item__info-text">A wonderful landing adapted for all devices was created to order by freelance. The page is rich in animations and functionality: modal windows, sliders with preview pictures, burger menu, etc. Used gulp 4 own assembly, library JQuery, HTML5, CSS3, JavaScript</div>
+                                    <a href="#" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-3.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">Landing Page</div>
+                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
+                                    <div class="slider-item__info-text">Beautiful clean landing page was created with the help of a new gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery.</div>
+                                    <a href="#" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-4.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">Landing Page</div>
+                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
+                                    <div class="slider-item__info-text">A simple, design landing page was created with the help of a new gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery. The site was created to order by freelance.</div>
+                                    <a href="#" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-5.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">tobacco shop seller emulator</div>
+                                    <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 </div>
+                                    <div class="slider-item__info-text">The amazing emulator was written in pure js. Functionality: The seller provides a choice of products, product selection, payment, if you want something else to choose, farewell.</div>
+                                    <a href="#" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section contact">
+        <div class="container">
+            <div class="wrapper">
+                <div class="section-header">
+                    <div class="section-header__title">contact me</div>
+                    <div class="section-header__subtitle">I am interested to work in a company especially ambitious or large projects. However, if you have other request or questions, don't hesitate to contact me using contact form below. </div>
+                    <form class="form" autocomplete="off">
+                        <input type="text" name="name" class="w-49" placeholder="Name">
+                        <input type="text" name="email" class="w-49" placeholder="Email">
+                        <input type="text" name="subject" class="w-100" placeholder="Subject">
+                        <textarea name="message" class="w-100" placeholder="Message"></textarea>
+                        <button type="button" class="btn">Send</button>
+                    </form>
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948097.5007994254!2d34.46884910657116!3d49.9945070256811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1592568375053!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </div>
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="container">
+        <div  class="wrapper column">
+            <div class="footer__item">
+                <ul class="social">
+                   <li class="social__item"><i class="fab fa-facebook"></i></li>
+                   <li class="social__item"><i class="fab fa-instagram"></i></li>
+                   <li class="social__item"><i class="fab fa-linkedin-in"></i></li>
+                   <li class="social__item"><i class="fab fa-github"></i></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer-header">
+                    <div class="title">need<b>an</b>app <br>
+                    website<br>
+                    <b>store?</b></div>
+                </div>
+                <ul class="footer-contact">
+                    <li class="title">contact me</li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <a href="#" class="mail">sokold3@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="#" class="phone">+380950108885</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-skype"></i>
+                        <a href="#" class="skype">den.sokol</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 <!--<div id="fullpage">-->
 <!--    <div class="section" id="section1">-->
 <!--        <h1>Hq</h1>-->
@@ -308,6 +401,7 @@
 <!--</div>-->
 <div class="overlay"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 
