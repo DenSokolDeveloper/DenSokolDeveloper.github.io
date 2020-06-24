@@ -16,6 +16,9 @@
             <button class="burger">
                 <span class="burger__item"></span>
             </button>
+            <button class="burger__close">
+                <span class="burger__close__item"></span>
+            </button>
             <label class="menu">menu</label>
         </div>
         <ul class="header-nav-list">
@@ -23,40 +26,52 @@
                 <a href="index.html" class="link">Home</a>
             </li>
             <li class="header-nav-list__item dropdown">
-                <a href="#" class="link">Works</a>
+                <a href="works.html" class="link">Works</a>
                 <i class="fas fa-chevron-down"></i>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a href="works.html#online-store" class="goto">Online shop</a>
+                    <a href="works.html#test-task" class="goto">Test task</a>
+                    <a href="works.html#coffee-machine" class="goto">Coffee machine</a>
+                    <a href="works.html#tobacco-seller" class="goto">Tobacco seller</a>
+                    <a href="works.html#landing1" class="goto">Landing Page</a>
+                    <a href="works.html#landing2" class="goto">Landing Page</a>
+                    <a href="works.html#landing3" class="goto">Landing Page</a>
                 </div>
             </li>
             <li class="header-nav-list__item">
                 <a href="skills.html" class="link" >Skills</a>
             </li>
             <li class="header-nav-list__item">
-                <a href="#" class="link" >About me</a>
+                <a href="about.html" class="link" >About me</a>
             </li>
             <li class="header-nav-list__item">
-                <a href="#" class="link" >Contacts</a>
+                <a href="contacts.html" class="link" >Contacts</a>
             </li>
         </ul>
         <div class="header-nav-switch">
-            <i class="fas fa-info-circle"></i>
+            <div class="tooltip">
+                <i class="fas fa-info-circle"></i>
+                <span class="tooltip__text">You can change the language of the page</span>
+            </div>
             <div class="dropdown">
                 <a href="#">EN</a>
                 <i class="fas fa-chevron-down"></i>
                 <div class="dropdown-content">
-                    <a href="#">EN</a>
-                    <a href="#">RU</a>
+                    <a href="index.html">EN</a>
+                    <a href="index-ru.html">RU</a>
                 </div>
             </div>
         </div>
     </nav>
     <div class="burger-content">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
+        <ul class="side-nav">
+            <li class="side-nav__item"><a class="link" href="index.html">01. Home</a></li>
+            <li class="side-nav__item"><a class="link" href="works.html">02. Works</a></li>
+            <li class="side-nav__item"><a class="link" href="skills.html">03. skills</a></li>
+            <li class="side-nav__item"><a class="link" href="about.html">04. about me</a></li>
+            <li class="side-nav__item"><a class="link" href="contacts.html">05. contacts</a></li>
+        </ul>
+
     </div>
 
     <div class="fab">
@@ -88,12 +103,13 @@
     </div>
 </header>
 <div class="page">
+    <section id="particles-js" class="particles-js"></section>
     <section class="section intro">
         <div class="container">
             <div class="wrapper">
                 <div class="section__img">
                     <img src="img/me.png" class="me" alt="me">
-                    <a href="#" class="btn">Learn more
+                    <a href="about.html" class="btn">Learn more
                     </a>
                     <svg class="mouse" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="mouse-clicker 1" clip-path="url(#clip0)">
@@ -114,20 +130,25 @@
                     </p>
                 </div>
                 <div class="section-info">
-                    <h1 class="title">Hi,<br>
-                        I'm Denis,<br>
+                    <h1 class="title">Hi,
+                        I'm Denis,
                         web developer.
                     </h1>
                     <h2 class="suptitle">Front End Developer / Freelancer</h2>
                 </div>
+                <div class="section__button">
+                    <p>If animation bother you</p>
+                    <button class="btn" id="clicker">Click here</button>
+
+                </div>
             </div>
         </div>
     </section>
-    <section class="section cando" id="cando">
+    <section class="section cando">
         <div class="container">
             <div class="wrapper column">
                 <div class="section-header">
-                    <div class="section-header__title">what i can do</div>
+                    <div class="section-header__title"><span>w</span><span>h</span><span>a</span><span>t</span> <span>i</span> <span>c</span><span>a</span><span>n</span> <span>d</span><span>o</span></div>
                 </div>
 
                 <div class="cando">
@@ -136,31 +157,31 @@
                     </div>
                     <div class="cando__item">
                         <div class="accordion">
-                            <div class="accordion__item" data-collapse="#wedo_1">
+                            <div class="accordion__item" data-collapse="#ido_1">
                                 <div class="accordion-header">
                                     <img class="accordion-header__icon" src="img/web-development.svg" alt="">
                                     <div class="accordion-header__title">web development</div>
                                 </div>
-                                <div class="accordion-content" id="wedo_1">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="accordion-content" id="ido_1">
+                                    <p>Strong knowledge and use of JavaScript, HTML5, CSS, SASS, SCSS, understanding and using the principles of SOLID, knowledge of the BEM methodology, knowledge of the JQuery, Bootstrap 4 libraries, knowledge of the Vue.js framework, and also Nuxt.js, Webpack, Gulp. I have experience in collective development and deploying projects on a git. I actively fulfill orders on the freelance market, create sites from 0 to 1, adjust markup, implement functionality, fully adapt sites for any devices.</p>
                                 </div>
                             </div>
-                            <div class="accordion__item active"  data-collapse="#wedo_2">
+                            <div class="accordion__item active"  data-collapse="#ido_2">
                                 <div class="accordion-header">
                                     <img class="accordion-header__icon" src="img/idea.svg" alt="">
                                     <div class="accordion-header__title">Creativity</div>
                                 </div>
-                                <div class="accordion-content" id="wedo_2">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="accordion-content" id="ido_2">
+                                  <p>Thinking outside the box, goal-seeking approach - understand, solve, remember. I follow the trends in the web industry to be in the center of events. I carry out the task and immediately think how it can be improved, modified, accelerated. I can clearly follow the instructions, but if the instructions are vague then I’m not afraid to make a decision and take responsibility.</p>
                                 </div>
                             </div>
-                            <div class="accordion__item" data-collapse="#wedo_3">
+                            <div class="accordion__item" data-collapse="#ido_3">
                                 <div class="accordion-header" >
                                     <img class="accordion-header__icon" src="img/website-design.svg" alt="">
                                     <div class="accordion-header__title">Web Design</div>
                                 </div>
-                                <div class="accordion-content" id="wedo_3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="accordion-content" id="ido_3">
+                                 <p>I can work with Photoshop and Figma. I can create an application using the pixel perfect technique. If necessary, I can quickly fix any moment in the layout.</p>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +194,7 @@
         <div class="container">
             <div class="wrapper column">
                 <div class="section-header">
-                    <div class="section-header__title">what i'm looking for</div>
+                    <div class="section-header__title"><span>w</span><span>h</span><span>a</span><span>t</span> <span>i</span><span>'</span><span>m</span> <span>l</span><span>o</span><span>o</span><span>k</span><span>i</span><span>n</span><span>g</span> <span>f</span><span>o</span><span>r</span></div>
                 </div>
 
                 <div class="card">
@@ -218,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn">Contact me</a>
+                <a href="#contact" class="btn goto">Contact me</a>
             </div>
         </div>
     </section>
@@ -226,7 +247,7 @@
         <div class="container">
             <div class="wrapper column">
                 <div class="section-header">
-                    <div class="section-header__title">previews of my works</div>
+                    <div class="section-header__title"><span>p</span><span>r</span><span>e</span><span>v</span><span>i</span><span>e</span><span>w</span><span>s</span> <span>o</span><span>f</span> <span>m</span><span>y</span> <span>w</span><span>o</span><span>r</span><span>k</span><span>s</span></div>
                 </div>
 
                 <div class="works">
@@ -239,8 +260,8 @@
                                 <div class="slider-item__info">
                                     <div class="slider-item__info-title">Online shop</div>
                                     <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Nuxt.js</div>
-                                    <div class="slider-item__info-text">This online store is written on the modern Nuht.js framework and the botstrap 4 / bootstrapVie libraries. Implemented work with the backend, and in more detail: appeal to the server, receiving and using data from the database. The site is under active development.</div>
-                                    <a href="#" class="btn">Look more</a>
+                                    <div class="slider-item__info-text">This online store is written on the modern Nuxt.js framework and the botstrap 4 / bootstrapVie libraries. Implemented work with the backend, and in more detail: appeal to the server, receiving and using data from the database. The site is under active development.</div>
+                                    <a href="works.html#online-store" target="_blank" class="btn">Look more</a>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +274,7 @@
                                     <div class="slider-item__info-title">test task</div>
                                     <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 & JSON server</div>
                                     <div class="slider-item__info-text">This test task was performed using asynchronous functions. Work with the user database has been implemented, in more detail: obtaining an array of users, drawing them into a table, functionality for deleting and adding users, and also sorting by any category.</div>
-                                    <a href="#" class="btn">Look more</a>
+                                    <a href="works.html#test-task" target="_blank" class="btn">Look more</a>
                                 </div>
                             </div>
                         </div>
@@ -266,46 +287,7 @@
                                     <div class="slider-item__info-title">coffee machine emulator</div>
                                     <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 </div>
                                     <div class="slider-item__info-text">Great emulator created using pure javascript. Functionality: greeting, choice of coffee, payment, money operations functional has been implemented - depositing funds, processing, issuing change if necessary, making coffee on a timer.</div>
-                                    <a href="#" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-6.jpg" alt="work1">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Landing Page</div>
-                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
-                                    <div class="slider-item__info-text">A wonderful landing adapted for all devices was created to order by freelance. The page is rich in animations and functionality: modal windows, sliders with preview pictures, burger menu, etc. Used gulp 4 own assembly, library JQuery, HTML5, CSS3, JavaScript</div>
-                                    <a href="#" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-3.jpg" alt="work1">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Landing Page</div>
-                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
-                                    <div class="slider-item__info-text">Beautiful clean landing page was created with the help of a new gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery.</div>
-                                    <a href="#" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-4.jpg" alt="work1">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Landing Page</div>
-                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
-                                    <div class="slider-item__info-text">A simple, design landing page was created with the help of a new gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery. The site was created to order by freelance.</div>
-                                    <a href="#" class="btn">Look more</a>
+                                    <a href="works.html#coffee-machine" target="_blank" class="btn">Look more</a>
                                 </div>
                             </div>
                         </div>
@@ -318,27 +300,67 @@
                                     <div class="slider-item__info-title">tobacco shop seller emulator</div>
                                     <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 </div>
                                     <div class="slider-item__info-text">The amazing emulator was written in pure js. Functionality: The seller provides a choice of products, product selection, payment, if you want something else to choose, farewell.</div>
-                                    <a href="#" class="btn">Look more</a>
+                                    <a href="works.html#tobacco-seller" target="_blank" class="btn">Look more</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-6.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">Landing Page</div>
+                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
+                                    <div class="slider-item__info-text">A wonderful landing adapted for all devices was created to order by freelance. The page is rich in animations and functionality: modal windows, sliders with preview pictures, burger menu, etc. Used gulp 4 own assembly, library JQuery, HTML5, CSS3, JavaScript.</div>
+                                    <a href="works.html#landing1" target="_blank" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-3.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">Landing Page</div>
+                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
+                                    <div class="slider-item__info-text">Beautiful clean landing page was created with the help of a new gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery.</div>
+                                    <a href="works.html#landing2" target="_blank" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__slider-item slider-item">
+                            <div class="slider-wrapper">
+                                <div class="img">
+                                    <img src="img/works-4.jpg" alt="work1">
+                                </div>
+                                <div class="slider-item__info">
+                                    <div class="slider-item__info-title">Landing Page</div>
+                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
+                                    <div class="slider-item__info-text">A simple, design landing page was created with the help of a new gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery. The site was created to order by freelance.</div>
+                                    <a href="works.html#landing3" target="_blank" class="btn">Look more</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section contact">
+    <section class="section contact" id="contact">
         <div class="container">
             <div class="wrapper">
                 <div class="section-header">
-                    <div class="section-header__title">contact me</div>
-                    <div class="section-header__subtitle">I am interested to work in a company especially ambitious or large projects. However, if you have other request or questions, don't hesitate to contact me using contact form below. </div>
-                    <form class="form" autocomplete="off">
-                        <input type="text" name="name" class="w-49" placeholder="Name">
-                        <input type="text" name="email" class="w-49" placeholder="Email">
-                        <input type="text" name="subject" class="w-100" placeholder="Subject">
-                        <textarea name="message" class="w-100" placeholder="Message"></textarea>
-                        <button type="button" class="btn">Send</button>
+                    <div class="section-header__title"><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span> <span>m</span><span>e</span></div>
+                    <div class="section-header__subtitle">I am interested in working in a company especially with the ambitious or large projects. However, if you have other requests or questions, don't hesitate to contact me using contact form below. </div>
+                    <form action="https://formspree.io/xbjzkvje" method="POST" class="form" autocomplete="off">
+                        <input required type="text" name="name" class="w-49" placeholder="Name">
+                        <input required type="email" name="_replyto" class="w-49" placeholder="Email">
+                        <input required type="text" name="subject" class="w-100" placeholder="Subject">
+                        <textarea required type="text" name="message" class="w-100" placeholder="Message"></textarea>
+                        <button type="submit" class="btn">Send</button>
                     </form>
                 </div>
 
@@ -355,15 +377,15 @@
         <div  class="wrapper column">
             <div class="footer__item">
                 <ul class="social">
-                   <li class="social__item"><i class="fab fa-facebook"></i></li>
-                   <li class="social__item"><i class="fab fa-instagram"></i></li>
-                   <li class="social__item"><i class="fab fa-linkedin-in"></i></li>
-                   <li class="social__item"><i class="fab fa-github"></i></li>
+                   <li class="social__item"><a target="_blank" href="https://www.facebook.com/profile.php?id=100007477698524"><i class="fab fa-facebook"></i></a></li>
+                   <li class="social__item"><a target="_blank" href="https://www.instagram.com/sokol1life/"><i class="fab fa-instagram"></i></a></li>
+                   <li class="social__item"><a target="_blank" href="https://www.linkedin.com/in/ден-сокол-6131a4196/"><i class="fab fa-linkedin-in"></i></a></li>
+                   <li class="social__item"><a target="_blank" href="https://github.com/DenSokolDeveloper"><i class="fab fa-github"></i></a></li>
                 </ul>
             </div>
             <div class="footer__item">
                 <div class="footer-header">
-                    <div class="title">need<b>an</b>app <br>
+                    <div class="title">need <b>an</b> app <br>
                     website<br>
                     <b>store?</b></div>
                 </div>
@@ -397,9 +419,8 @@
 <!--        <h1>Hj</h1>-->
 <!--    </div>-->
 <!--</div>-->
-<div class="overlay"></div>
+<script src="js/particles.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 
