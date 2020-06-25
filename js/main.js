@@ -83,6 +83,18 @@ $(function () {
 
 });
 
+function showModal() {
+    $('.overlay').fadeIn(400, function () {
+        $('.modal').css('display','flex').animate({opacity: 1}, 200);
+    });
+    $('.overlay, .modal__close').on('click',function () {
+        $('.modal').animate({opacity: 0}, 200, function () {
+            $(this).css('display', 'none');
+            $('.overlay').fadeOut(400);
+        });
+    });
+};
+
 
 
 
