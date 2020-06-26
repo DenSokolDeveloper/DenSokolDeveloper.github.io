@@ -1,4 +1,29 @@
 $(function () {
+    //HEADER
+    let header = $('.header'),
+        introH= $('.intro').innerHeight(),
+        scrollOffset=$(window).scrollTop();//переменная по умолчанию
+
+
+    //header fixed
+    checkScroll(scrollOffset);
+
+
+    $(window).on('scroll', function () {
+        scrollOffset = $(this).scrollTop();
+
+        checkScroll(scrollOffset);
+    });
+
+    function checkScroll(scrollOffset) {
+        if (scrollOffset<=introH){
+            header.css('background-color','transparent');
+        }else   {
+            header.css('background-color','#fff');
+        }
+    }
+    //HEADER
+
 
     //MENU
     $('.burger').on('click',function (event) {
@@ -56,6 +81,8 @@ $(function () {
     $('.works__slider').slick({
        infinite: true,
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="../img/back.svg" alt="">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="../img/next.svg" alt="">'
     });
