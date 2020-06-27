@@ -43,9 +43,9 @@ $(function () {
 
     function checkScroll(scrollOffset) {
         if (scrollOffset<=introH){
-            header.css('background-color','transparent');
+            header.removeClass('active');
         }else   {
-            header.css('background-color','#fff');
+            header.addClass('active');
         }
     }
     //HEADER
