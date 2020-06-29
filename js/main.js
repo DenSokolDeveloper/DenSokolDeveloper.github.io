@@ -1,4 +1,6 @@
 $(function () {
+    //PRELOADER
+    //PRELOADER
 
     //AOS ANIMATION
     AOS.init({  // Global settings:
@@ -137,6 +139,7 @@ $(function () {
 
 
 });
+
 
 function showModal() {
     $('.overlay').fadeIn(400, function () {
