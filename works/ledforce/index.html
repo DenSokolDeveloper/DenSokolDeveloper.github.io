@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="wrapper">
+            <div class="header__logo">
+                <a href="#content" class="goto"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="header__phone">
+                <img data-aos="flip-right" data-aos-duration="1000" src="img/big-phone.png" alt="phone">
+                <a href="tel:+300672170300">+30 067 2170300</a>
+            </div>
+            <nav class="header-nav" id="header-nav">
+                <div class="img__treangle"></div>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#programs" class="goto">Show Programs</a></li>
+                    <li class="nav-list__item"><a href="#price" class="goto">Costs </a></li>
+                    <li class="nav-list__item"><a href="#about-us" class="goto">About Us</a></li>
+                    <li class="nav-list__item"><a href="#reviews" class="goto">Reviews</a></li>
+                    <li class="nav-list__item"><a href="#questions" class="goto">Question-Answer</a></li>
+                    <li class="nav-list__item"><a href="#contact" class="goto">Contacts</a></li>
+                </ul>
+            </nav>
+            <button  class="header-nav-burger" id="header-nav-burger" type="button">
+                <span class="header-nav-burger__item"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<section id="content" class="content">
+    <div class="container">
+        <div class="content-block">
+            <div class="shadow">
+                <div class="block-description">
+                    <h1 class="ml-20">Unforgettable <a href="#" class="underline">light LED SHOW</a> for your events</h1>
+                    <div class="block-description-text ml-20">
+                        <h2 class="first">Show program in UA from <b>№1</b></h2>
+                        <h2 class="second"><b>2 000 €</b></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="block-social" data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
+                <a href="https://www.instagram.com/" class="block-social__link"><img class="instagram" src="img/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/" class="block-social__link"><img class="facebook" src="img/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com" class="block-social__link"><img class="youtube" src="img/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <a href="#contact" data-aos="flip-right" class="content__btn goto">Have an offer</a>
+    </div>
+</section>
+<section class="promo-block" id="promo">
+    <div class="container">
+        <div class="promo-block__video">
+            <h2 data-aos="fade-up">Dragons you'll remember for a long time!</h2>
+            <div class="promo">
+                <img src='img/player_play.png' onclick='show_video1();' class='img_video' alt="">
+                <img src="img/background.gif" class="promo__bg" alt="">
+                <p>The dancers in LED suits on jumpers
+                    can surprise anyone! Your event will turn into an exclusive
+                    with breathtaking illumination.</p>
+            </div>
+            <div class="promo-block__info">
+                <a href="#" class="underline ml-20">
+                    Our show will be perfect to any event:
+                </a>
+            <ul class="list">
+                <li data-aos="fade-left" class="list__item">
+                    <p class="club">Club activities</p>
+                </li>
+                <li data-aos="fade-left" class="list__item">
+                    <p class="concert">Сoncerts</p>
+                </li>
+                <li data-aos="fade-left" class="list__item">
+                    <p class="corporate">Corporate events</p>
+                </li>
+                <li data-aos="fade-left" class="list__item">
+                    <p class="presentation">Promo-actions and presentations</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</section>
+<section id="programs" class="programs">
+    <div class="container">
+        <div class="programs-wrapper">
+            <a href="#" class="underline ml-20">
+                Select a show program
+            </a>
+            <p class="ml-20">We have prepared four unique offers for you.
+                Please check out our programs.</p>
+            <ul data-aos="fade-up" class="programs-list">
+                <li class="programs-list__item">
+                    <img class="img-program__bg" src="img/list-1.jpg" alt="">
+                    <img src='img/player_play.png' onclick='show_video2();' class='img_video' alt="">
+                    <h4>The Jumper Dragons Show</h4>
+                    <button onclick="show_program1()" class="btn">
+                        Read more
+                    </button>
+                </li>
+                <li class="programs-list__item">
+                    <img class="img-program__bg" src="img/list-2.jpg" alt="">
+                    <img src='img/player_play.png' onclick='show_video3();' class='img_video' alt="">
+                    <h4>Robots Show</h4>
+                    <button onclick="show_program2()" class="btn">
+                        Read more
+                    </button>
+                </li>
+                <li class="programs-list__item">
+                    <img class="img-program__bg" src="img/list-3.jpg" alt="">
+                    <img src='img/player_play.png' onclick='show_video4();' class='img_video' alt="">
+                    <h4>Confetti and Paper Show</h4>
+                    <button onclick="show_program3()" class="btn">
+                        Read more
+                    </button>
+                </li>
+                <li class="programs-list__item">
+                    <img class="img-program__bg" src="img/list-4.jpg" alt="">
+                    <img src='img/player_play.png' onclick='show_video5();' class='img_video' alt="">
+                    <h4>DJ's Show</h4>
+                    <button onclick="show_program4()" class="btn">
+                        Read more
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="can-more">
+    <div class="container">
+        <div class="background-wrapper">
+            <div class="background-wrapper__content">
+                <a href="#" class="underline">
+                    We could do more
+                </a>
+                <p class="bold">We know how to get the most out
+                    of Your event!</p>
+                <p>We have some non-standard solutions to integrate
+                    dancers into the event so as to make the audience
+                    talk about You in instagram.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partner">
+    <div class="container">
+        <div class="partner-block">
+            <a href="#" class="underline">
+                LED Force is a reliable partner
+            </a>
+            <div class="partner-block-content">
+                <div     class="partner-block-content__item">
+                    <img data-aos="zoom-out" src="./img/people.png" alt="#">
+                    <p>5 years<br> of success on
+                        the international
+                        market</p>
+                </div>
+                <div class="partner-block-content__item">
+                    <img data-aos="zoom-out" src="./img/like.png" alt="#">
+                    <p>More than 200 activities were
+                        carried out</p>
+                </div>
+                <div class="partner-block-content__item">
+                    <img data-aos="zoom-out" src="./img/group.png" alt="#">
+                    <p>Our programs
+                        have seen
+                        20 000 people</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-us" class="own-production">
+    <div class="container">
+        <div class="wrapper">
+            <div  class="wrapper-content" data-aos="fade-right">
+                <a href="#" class="underline ml-20">
+                    Having our own production
+                </a>
+                <p class="ml-20">Our engineers have developed and assembled unique LED equipment
+                    on the basis of their own laboratory
+                    "Walhalla Tech".</p>
+                <ul class="list">
+                    <li class="list__item">
+                        <p>7 years of successful work</p>
+                    </li>
+                    <li class="list__item">
+                        <p>Modern technologies</p>
+                    </li>
+                    <li class="list__item">
+                        <p>Skilled professionals</p>
+                    </li>
+                    <li class="list__item">
+                        <p>4-generation LED costume implementation</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+            <a href="#" class="underline">
+                Organize you event brightly!
+            </a>
+            <form class="contact-form" id=nameForm>
+                <label class="contact-form__title">Please leave your details and we’ll be
+                    in touch shortly</label>
+                <input type="text" id="name" name="name" placeholder="Your name" class="form-control" >
+                <input type="tel" id="phone" name="tel" placeholder="+380-__-___-__-__" class="form-control">
+                <input type="date" id="start" name="trip-start" min="2020-01-01" max="2021-12-31" class="form-control">
+                <button data-aos="fade-in" type="button" id="sendName" class="contact-form__btn">have an offer</button>
+                <div id="errorMess" class="contact-form__error"></div>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="price" class="price">
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-content">
+                <a href="#" class="underline ml-20">
+                    Сost of our events from 2 000 Euro
+                </a>
+                <ul class="list">
+                    <li class="list__item">
+                        <p>Convenient dates: flexible timing</p>
+                    </li>
+                    <li class="list__item">
+                        <p>Modular program construction</p>
+                    </li>
+                    <li class="list__item">
+                        <p>Transparent pricing</p>
+                    </li>
+                    <li class="list__item">
+                        <p>Extended time: duration of the performance is up to 90 minutes</p>
+                    </li>
+                    <li class="list__item">
+                        <p>The implementation of the 4th generation of LED suits</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="reviews" class="comments">
+    <div class="container">
+        <div data-aos="fade-right" class="wrapper">
+            <a href="#" class="underline ml-20">
+                Quicken on our customers' feedback
+            </a>
+            <div  class="wrapper-content ml-20">
+                <div class="image">
+                    <img src="./img/person1.png" alt="Viktoria">
+                </div>
+                <div class="person-title">
+                    <span>
+                        Victoria
+                    </span>
+                    <p>
+                        I would like to express my deepest gratitude to
+                        the Led Force team. It was powerful, our guests are
+                        delighted! Be sure to . let's turn to you again!
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper-content ml-20">
+                <div class="image">
+                    <img src="./img/person2.png" alt="Viktoria">
+                </div>
+                <div class="person-title">
+                    <span>
+                        Yuri
+                    </span>
+                    <p>
+                        I’m not ordering the show for the first time! It looks cool and
+                        effective! Special thanks for the professionalism and quality of the organization
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper-content ml-20">
+                <div class="image">
+                    <img src="./img/person3.png" alt="Viktoria">
+                </div>
+                <div class="person-title">
+                    <span>
+                        Bohdan
+                    </span>
+                    <p>
+                        Watching the light show is a special treat. Guests are delighted
+                        and the atmosphere is great! What else is needed for a happy holiday.
+                        You are the best, thank you!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="accordion">
+    <div class="container">
+        <a href="#" class="underline">
+            We are often asked
+        </a>
+        <div data-aos="fade-in" class="accordion-wrapper">
+            <button class="accordion">Do you need a stage for the artists to perform?
+            </button>
+            <div class="panel">
+                <p>Not necessarily. In order to achieve the maximum effect from the performance,
+                    we recommend to allocate a separate area. Artists can also be located in
+                    the center of the audience.</p>
+            </div>
+
+            <button class="accordion">Do you work under your musical accompaniment?</button>
+            <div class="panel">
+                <p>PJ support is provided to customer's music. We use our own music to demonstrate
+                    the ready room.</p>
+            </div>
+
+            <button class="accordion">What equipment is necessary for work?</button>
+            <div class="panel">
+                <p>We provide all the necessary equipment ourselves! In a show with confetti
+                    cannons you will need 220 V sockets.</p>
+            </div>
+
+            <button class="accordion">How long is the performance?</button>
+            <div class="panel">
+                <p>The standard performance time is 60 minutes. If necessary, we can extend the program duration</p>
+            </div>
+
+            <button class="accordion">Is it possible to change the standard program?</button>
+            <div class="panel">
+                <p>Yes, you can. We provide slots for artists to interact with other participants.
+                    At the consultation, we'll discuss the performance plan</p>
+            </div>
+
+            <button class="accordion">Do artists need a training room?</button>
+            <div class="panel">
+                <p>Yes, we'll agree with you on that.</p>
+            </div>
+
+            <button class="accordion">Is payment by bank transfer possible?</button>
+            <div class="panel">
+                <p>Yes, we accept cashless payments. We will conclude the contract and provide you
+                    with all the necessary documents and regulations</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="download">
+    <div class="container">
+        <div class="download-wrapper">
+            <h3>
+                Download presentation in PDF
+            </h3>
+            <a data-aos="fade-in" target="_blank" href="https://drive.google.com/file/d/1U4ptBCkNU2wHYWwCmnbtmwCgNsXbMrd8/view" class="btn">download</a>
+        </div>
+    </div>
+</section>
+<section id="questions" class="questions">
+    <div class="container">
+        <div class="questions-wrapper">
+            <a href="#" class="underline ml-20">
+                Have a question?
+            </a>
+            <p class="text">Leave a request and we will call you back soon</p>
+            <div class="social ml-20">
+                <div data-aos="fade-right" class="block-social">
+                    <a href="https://www.instagram.com/" class="block-social__link"><img class="instagram" src="img/instagram.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/" class="block-social__link"><img class="facebook" src="img/facebook.png" alt="facebook"></a>
+                    <a href="https://www.youtube.com" class="block-social__link"><img class="youtube" src="img/youtube.png" alt="youtube"></a>
+                </div>
+                <form id="sendPhone" class="social-form">
+                    <input type="text" id="name1" name="name" class="form-control" placeholder="Your name" />
+                    <input type="tel" id="phone1" name="tel" class="form-control" placeholder="+380-__-___-__-__" >
+                    <button data-aos="fade-in" type="button" id="sendData" class="social-form__btn">call me</button>
+                    <div id="errorMess1" class="contact-form__error1"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrap">
+            <div class="footer__logo">
+                <img src="img/logo.png" alt="logo">
+                <p>Ukraine, Kiev</p>
+            </div>
+            <div class="footer-social">
+                <div data-aos="flip-down" class="footer-social__block">
+                    <img class="instagram" src="img/instagram.png" alt="instagram">
+                    <img class="facebook" src="img/facebook.png" alt="facebook">
+                    <img class="youtube" src="img/youtube.png" alt="youtube">
+                </div>
+                <div class="footer-social__text">
+                    <p>© «‎LED FORCE» 2015-2020</p>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-contacts__phone">
+                    <img src="img/big-phone.png" alt="phone">
+                    <a href="tel:+300672170300">+30 067 2170300</a>
+                </div>
+                <div class="footer-contacts__email">
+                    <p>@</p>
+                    <a href="email:leddforce@gmail.com">leddforce@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="modal_form"><!-- Сaмo oкнo -->
+    <span class="modal_close-video">&#10006;</span> <!-- Кнoпкa зaкрыть -->
+    <!-- Тут любoе сoдержимoе -->
+    <div class="modal1"><iframe class="modal__video" src="https://www.youtube.com/embed/SEp9Kh0M4f0?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id='v1'></iframe></div>
+    <div class="modal2"><iframe class="modal__video" src="https://www.youtube.com/embed/XEEasR7hVhA?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="v2"></iframe></div>
+    <div class="modal3"><iframe class="modal__video" src="https://www.youtube.com/embed/VpATBBRajP8?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="v3"></iframe></iframe></div>
+    <div class="modal4"><iframe class="modal__video" src="https://www.youtube.com/embed/pOqmkhin4Dw?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="v4"></iframe></div>
+    <div class="modal5"><iframe class="modal__video" src="https://www.youtube.com/embed/o_l4Ab5FRwM?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="v5"></iframe></iframe></div>
+</div>
+<div id="overlay">
+</div><!-- Пoдлoжкa -->
+<div class="modal_program" id="modal_program1">
+    <div class="container">
+        <span class="modal_close-program">&#10006;</span> <!-- Кнoпкa зaкрыть -->
+        <div class="wrapper-slider">
+            <div class="images-block">
+                <div class="mySlides1">
+                    <img src="./img/list-1.jpg" alt="">
+                </div>
+                <div class="mySlides1">
+                    <img src="./img/list-2.jpg" alt="">
+                </div>
+                <div class="mySlides1">
+                    <img src="./img/list-3.jpg" alt="">
+                </div>
+                <div class="mySlides1">
+                    <img src="./img/list-4.jpg" alt="">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo1 cursor" src="./img/list-1.jpg" onclick="currentSlide1(1)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo1 cursor" src="./img/list-2.jpg" onclick="currentSlide1(2)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo1 cursor" src="./img/list-3.jpg" onclick="currentSlide1(3)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo1 cursor" src="./img/list-4.jpg" onclick="currentSlide1(4)" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="content-block__title">The Jumper Dragons Show</div>
+                <div class="content-block__price">from 6,000 euros</div>
+                <a href="#contact" onclick="gotocontact()" type="button" class="btn goto">to order</a>
+                <p class="text">Bright and dynamic freestyle dancers' performance in LED dragon costumes with jumper jumping.</p>
+                <p class="postext">The program is suitable for a meeting and
+                    accompanying guests to various
+                    events, warming up the audience,
+                    headliner and staff appearances
+                    artists</p>
+                <ul>
+                    <li>-2 jumper artists</li>
+                    <li>-LED engineer</li>
+                    <li>-LED suits</li>
+                    <li>-technical accompaniment</li>
+                    <li>-3 sets of 15 minutes each</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal_program" id="modal_program2">
+    <div class="container">
+        <span class="modal_close-program">&#10006;</span> <!-- Кнoпкa зaкрыть -->
+        <div class="wrapper-slider">
+        <div class="images-block">
+                <div class="mySlides2">
+                    <img src="./img/slider-1.jpg" alt="">
+                </div>
+                <div class="mySlides2">
+                    <img src="./img/slider-2.jpg" alt="">
+                </div>
+                <div class="mySlides2">
+                    <img src="./img/slider-3.jpg" alt="">
+                </div>
+                <div class="mySlides2">
+                    <img src="./img/list-2.jpg" alt="">
+                </div>
+            <div class="row">
+                <div class="column">
+                    <img class="demo2 cursor" src="./img/slider-1.jpg" onclick="currentSlide2(1)" alt="">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="./img/slider-2.jpg" onclick="currentSlide2(2)" alt="">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="./img/slider-3.jpg" onclick="currentSlide2(3)" alt="">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="./img/list-2.jpg" onclick="currentSlide2(4)" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content-block">
+            <div class="content-block__title">The Robots Show</div>
+            <div class="content-block__price">from 6,000 euros</div>
+            <a href="#contact" onclick="gotocontact()" type="button" class="btn goto">to order</a>
+            <p class="text">Effective freestyle performance of artists in LED robot costumes with special effects. The show will fill the guests with energy and vivid emotions.</p>
+            <p class="postext">The program is suitable for a meeting and
+                accompanying guests to various
+                events, warming up the audience,
+                headliner and staff appearances
+                as artists.</p>
+            <ul>
+                <li>-2 artists</li>
+                <li>-LED engineer</li>
+                <li>-LED suits</li>
+                <li>-technical accompaniment</li>
+                <li>-3 sets of 15 minutes each</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="modal_program" id="modal_program3">
+    <div class="container">
+        <span class="modal_close-program">&#10006;</span> <!-- Кнoпкa зaкрыть -->
+        <div class="wrapper-slider">
+            <div class="images-block">
+                <div class="mySlides3">
+                    <img src="./img/list-3.jpg" alt="">
+                </div>
+                <div class="mySlides3">
+                    <img src="./img/conf-1.jpg" alt="">
+                </div>
+                <div class="mySlides3">
+                    <img src="./img/conf-2.jpg" alt="">
+                </div>
+                <div class="mySlides3">
+                    <img src="./img/conf-3.jpg" alt="">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo3 cursor" src="./img/list-3.jpg" onclick="currentSlide3(1)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="./img/conf-1.jpg" onclick="currentSlide3(2)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="./img/conf-2.jpg" onclick="currentSlide3(3)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="./img/conf-3.jpg" onclick="currentSlide3(4)" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="content-block__title">Konfetti & Paper Show</div>
+                <div class="content-block__price">from 6,000 euros</div>
+                <a href="#contact" onclick="gotocontact()" type="button" class="btn goto">to order</a>
+                <p class="text">We developed safe confetti guns to make your event brighter! Dancers in LED suits and thick clouds of sequins... Guests will be delighted</p>
+                <p class="postext">The program is suitable for a meeting and
+                    accompanying guests to various
+                    events, warming up the audience,
+                    headliner and staff appearances
+                    artists</p>
+                <ul>
+                    <li>-2 artists</li>
+                    <li>-LED engineer</li>
+                    <li>-LED suits</li>
+                    <li>-2 confetti guns</li>
+                    <li>-technical accompaniment</li>
+                    <li>-3 sets of 15 minutes each</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal_program" id="modal_program4">
+    <div class="container">
+        <span class="modal_close-program">&#10006;</span> <!-- Кнoпкa зaкрыть -->
+        <div class="wrapper-slider">
+            <div class="images-block">
+                <div class="mySlides4">
+                    <img src="./img/dj-1.jpg" alt="">
+                </div>
+                <div class="mySlides4">
+                    <img src="./img/dj-2.jpg" alt="">
+                </div>
+                <div class="mySlides4">
+                    <img src="./img/dj-3.jpg" alt="">
+                </div>
+                <div class="mySlides4">
+                    <img src="./img/list-4.jpg" alt="">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo4 cursor" src="./img/dj-1.jpg" onclick="currentSlide4(1)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo4 cursor" src="./img/dj-2.jpg" onclick="currentSlide4(2)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo4 cursor" src="./img/dj-3.jpg" onclick="currentSlide4(3)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo4 cursor" src="./img/list-4.jpg" onclick="currentSlide4(4)" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="content-block__title">DJ's Show</div>
+                <div class="content-block__price">from 5,000 euros</div>
+                <a href="#contact" onclick="gotocontact()" type="button" class="btn goto">to order</a>
+                <p class="text">DJ in LED suit will produce WOW effect on guests! Dynamic music and bright LEDs will create an unforgettable atmosphere at your event.</p>
+                <p class="postext">The program is suitable for any format of meeting and
+                    accompanying guests to various
+                    events, warming up the audience,
+                    headliner and staff appearances
+                    artists</p>
+                <ul>
+                    <li>-DJ artist</li>
+                    <li>-LED engineer</li>
+                    <li>-LED suits</li>
+                    <li>-technical accompaniment</li>
+                    <li>-till 2:00 a.m.</li>
+                </ul>
+                <p>* Music equipment is provided by the customer</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
