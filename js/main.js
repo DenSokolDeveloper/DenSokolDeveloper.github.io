@@ -86,10 +86,10 @@ $(function () {
         //options here
         autoScrolling: true,
         fitToSection: false,
-        anchors: ['online-store','test-task','coffee-machine','tobacco-seller','landing1','landing2','landing3', 'contacts'],
+        anchors: ['online-store','posts','test-task','coffee-machine','tobacco-seller','landing1','landing2','landing3', 'contacts'],
         navigation: true,
         navigationPosition: 'left',
-        navigationTooltips: ['Online shop','Test task','Coffee machine','Tobacco seller','Landing Page','Landing Page','Landing Page','Contacts'],
+        navigationTooltips: ['Online shop','Posts','Test task','Coffee machine','Tobacco seller','Landing Page','Landing Page','Landing Page','Contacts'],
 
     });
 
@@ -289,6 +289,25 @@ function showSlides7(n) {
     slides[slideIndex7-1].style.display = "block";
     dots[slideIndex7-1].className += " active";
 }
+function currentSlide8(n) {
+    showSlides8(slideIndex8 = n);
+}
+function showSlides8(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides8");
+    let dots = document.getElementsByClassName("demo8");
+
+    if (n > slides.length) {slideIndex8 = 1}
+    if (n < 1) {slideIndex8 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex8-1].style.display = "block";
+    dots[slideIndex8-1].className += " active";
+}
 let slideIndex1 = 1;
 let slideIndex2 = 1;
 let slideIndex3 = 1;
@@ -296,6 +315,7 @@ let slideIndex4 = 1;
 let slideIndex5 = 1;
 let slideIndex6 = 1;
 let slideIndex7 = 1;
+let slideIndex8 = 1;
 
 showSlides1(slideIndex1);
 showSlides2(slideIndex2);
@@ -304,3 +324,4 @@ showSlides4(slideIndex4);
 showSlides5(slideIndex5);
 showSlides6(slideIndex6);
 showSlides7(slideIndex7);
+showSlides8(slideIndex8);
