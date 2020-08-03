@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+<div id="preloader">
+    <div id="status"></div>
+</div>
 <header class="header">
     <nav class="header-nav">
         <div class="header-nav-burger">
@@ -643,19 +645,7 @@
     </section>
 </main>
 
-<div class="modal">
-    <div class="modal__close">
-      <span class="item"></span>
-    </div>
-    <form action="https://formspree.io/xbjzkvje" method="POST" class="form" autocomplete="off">
-        <input required type="text" name="name" class="w-49" placeholder="Name">
-        <input required type="email" name="_replyto" class="w-49" placeholder="Email">
-        <input required type="text" name="subject" class="w-100" placeholder="Subject">
-        <textarea required type="text" name="message" class="w-100" placeholder="Message"></textarea>
-        <button type="submit" class="btn">Send</button>
-    </form>
-</div>
-<div class="overlay"></div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>

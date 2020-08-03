@@ -1,5 +1,10 @@
 $(function () {
     //PRELOADER
+    $(window).on('load', function () {
+        $('#status').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
+        $('body').delay(350).css({'overflow': 'visible'});
+    });
     //PRELOADER
 
     //AOS ANIMATION
@@ -128,8 +133,8 @@ $(function () {
         var dest = el.attr('href'); // получаем направление
         if(dest !== undefined && dest !== '') { // проверяем существование
             $('html').animate({
-                    scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
-                }, 700 // скорость прокрутки
+                  scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+              }, 700 // скорость прокрутки
             );
         }
         return false;
@@ -139,21 +144,6 @@ $(function () {
 
 
 });
-
-
-function showModal() {
-    $('.overlay').fadeIn(400, function () {
-        $('.modal').css('display','flex').animate({opacity: 1}, 200);
-    });
-    $('.overlay, .modal__close').on('click',function () {
-        $('.modal').animate({opacity: 0}, 200, function () {
-            $(this).css('display', 'none');
-            $('.overlay').fadeOut(400);
-        });
-    });
-};
-
-
 
 
 function currentSlide1(n) {
