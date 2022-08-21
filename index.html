@@ -1,519 +1,593 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/main.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
 
 <div id="preloader">
-    <div id="status"></div>
+  <div id="status"></div>
 </div>
 <header class="header">
-    <nav class="header-nav">
-        <div class="header-nav-burger">
-            <button class="burger">
-                <span class="burger__item"></span>
-            </button>
-            <button class="burger__close">
-                <span class="burger__close__item"></span>
-            </button>
-            <label class="menu">menu</label>
-        </div>
-        <ul class="header-nav-list">
-            <li class="header-nav-list__item">
-                <a href="index.html" class="link">Home</a>
-            </li>
-            <li class="header-nav-list__item dropdown">
-                <a href="works.html" class="link">Works</a>
-                <i class="fas fa-chevron-down"></i>
-                <div class="dropdown-content">
-                    <a href="works.html#dutch-landing" class="goto">DutchSwap HomePage</a>
-                    <a href="works.html#dutch-studio" class="goto">DutchSwap Studio</a>
-                    <a href="works.html#superhero" class="goto">SuperHero App</a>
-                    <a href="works.html#online-store" class="goto">Online shop</a>
-                    <a href="works.html#kanban" class="goto">KanbanBord</a>
-                    <a href="works.html#angular-todo" class="goto">ToDo App on Angular</a>
-                    <a href="works.html#posts" class="goto">Posts</a>
-                    <a href="works.html#todo" class="goto">Todo Application</a>
-                    <a href="works.html#test-task" class="goto">Test task</a>
-                    <a href="works.html#coffee-machine" class="goto">Coffee machine</a>
-                    <a href="works.html#bootstrap-land" class="goto">Bootstrap4 Landing</a>
-                    <a href="works.html#landing1" class="goto">Landing Page</a>
-                    <a href="works.html#landing2" class="goto">Landing Page</a>
-                    <a href="works.html#landing3" class="goto">Landing Page</a>
-                </div>
-            </li>
-            <li class="header-nav-list__item">
-                <a href="skills.html" class="link" >Skills</a>
-            </li>
-            <li class="header-nav-list__item">
-                <a href="about.html" class="link" >About me</a>
-            </li>
-        </ul>
-        <div class="header-nav-switch">
-            <div class="tooltip">
-                <i class="fas fa-info-circle"></i>
-                <span class="tooltip__text">On this site you can get to know me better and see some of my work.</span>
-            </div>
-        </div>
-    </nav>
-    <div class="burger-content">
-        <ul class="side-nav">
-            <li class="side-nav__item"><a class="link" href="index.html">01. Home</a></li>
-            <li class="side-nav__item"><a class="link" href="works.html">02. Works</a></li>
-            <li class="side-nav__item"><a class="link" href="skills.html">03. skills</a></li>
-            <li class="side-nav__item"><a class="link" href="about.html">04. about me</a></li>
-        </ul>
-
+  <nav class="header-nav">
+    <div class="header-nav-burger">
+      <button class="burger">
+        <span class="burger__item"></span>
+      </button>
+      <button class="burger__close">
+        <span class="burger__close__item"></span>
+      </button>
+      <label class="menu">menu</label>
     </div>
+    <ul class="header-nav-list">
+      <li class="header-nav-list__item">
+        <a href="index.html" class="link">Home</a>
+      </li>
+      <li class="header-nav-list__item dropdown">
+        <a href="works.html" class="link">Works</a>
+        <i class="fas fa-chevron-down"></i>
+        <div class="dropdown-content">
+          <a href="works.html#dutch-landing" class="goto">DutchSwap HomePage</a>
+          <a href="works.html#dutch-studio" class="goto">DutchSwap Studio</a>
+          <a href="works.html#superhero" class="goto">SuperHero App</a>
+          <a href="works.html#online-store" class="goto">Online shop</a>
+          <a href="works.html#kanban" class="goto">KanbanBord</a>
+          <a href="works.html#angular-todo" class="goto">ToDo App on Angular</a>
+          <a href="works.html#posts" class="goto">Posts</a>
+          <a href="works.html#todo" class="goto">Todo Application</a>
+          <a href="works.html#test-task" class="goto">Test task</a>
+          <a href="works.html#coffee-machine" class="goto">Coffee machine</a>
+          <a href="works.html#bootstrap-land" class="goto">Bootstrap4 Landing</a>
+          <a href="works.html#landing1" class="goto">Landing Page</a>
+          <a href="works.html#landing2" class="goto">Landing Page</a>
+          <a href="works.html#landing3" class="goto">Landing Page</a>
+        </div>
+      </li>
+      <li class="header-nav-list__item">
+        <a href="skills.html" class="link">Skills</a>
+      </li>
+      <li class="header-nav-list__item">
+        <a href="about.html" class="link">About me</a>
+      </li>
+    </ul>
+    <div class="header-nav-switch">
+      <div class="tooltip">
+        <i class="fas fa-info-circle"></i>
+        <span class="tooltip__text">On this site you can get to know me better and see some of my work.</span>
+      </div>
+    </div>
+  </nav>
+  <div class="burger-content">
+    <ul class="side-nav">
+      <li class="side-nav__item"><a class="link" href="index.html">01. Home</a></li>
+      <li class="side-nav__item"><a class="link" href="works.html">02. Works</a></li>
+      <li class="side-nav__item"><a class="link" href="skills.html">03. skills</a></li>
+      <li class="side-nav__item"><a class="link" href="about.html">04. about me</a></li>
+    </ul>
 
-    <div class="fab">
+  </div>
+
+  <div class="fab">
          <span class="fab-action-button">
         <i class="fab-action-button__icon"></i>
          </span>
-        <ul class="fab-buttons">
-            <li class="fab-buttons__item">
-                <a href="https://www.facebook.com/profile.php?id=100007477698524" target="_blank" class="fab-buttons__link" data-tooltip="Facebook">
-                    <i class="icon-material icon-material_fb"></i>
-                </a>
-            </li>
-            <li class="fab-buttons__item">
-                <a href="https://github.com/DenSokolDeveloper" target="_blank" class="fab-buttons__link" data-tooltip="Github">
-                    <i class="icon-material icon-material_gh"></i>
-                </a>
-            </li>
-            <li class="fab-buttons__item">
-                <a href="https://www.linkedin.com/in/ден-сокол-6131a4196/" target="_blank" class="fab-buttons__link" data-tooltip="Linkedin">
-                    <i class="icon-material icon-material_li"></i>
-                </a>
-            </li>
-            <li class="fab-buttons__item">
-                <a href="https://www.instagram.com/sokol1life/" target="_blank" class="fab-buttons__link" data-tooltip="Instagram">
-                    <i class="icon-material icon-material_in"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <ul class="fab-buttons">
+      <li class="fab-buttons__item">
+        <a href="https://www.facebook.com/profile.php?id=100007477698524" target="_blank" class="fab-buttons__link"
+           data-tooltip="Facebook">
+          <i class="icon-material icon-material_fb"></i>
+        </a>
+      </li>
+      <li class="fab-buttons__item">
+        <a href="https://github.com/DenSokolDeveloper" target="_blank" class="fab-buttons__link" data-tooltip="Github">
+          <i class="icon-material icon-material_gh"></i>
+        </a>
+      </li>
+      <li class="fab-buttons__item">
+        <a href="https://www.linkedin.com/in/ден-сокол-6131a4196/" target="_blank" class="fab-buttons__link"
+           data-tooltip="Linkedin">
+          <i class="icon-material icon-material_li"></i>
+        </a>
+      </li>
+      <li class="fab-buttons__item">
+        <a href="https://www.instagram.com/sokol1life/" target="_blank" class="fab-buttons__link"
+           data-tooltip="Instagram">
+          <i class="icon-material icon-material_in"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>
 <main class="page">
-    <section id="particles-js" class="particles-js"></section>
-    <section class="section intro">
-        <div class="container">
-            <div class="wrapper">
-                <div class="section__img">
-                    <img src="img/me.png" class="me" alt="me">
-                    <a href="about.html" class="btn">Learn more
-                    </a>
-                    <svg class="mouse" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="mouse-clicker 1" clip-path="url(#clip0)">
-                            <path id="Vector" d="M255.602 0C172.559 0 105 67.5586 105 150.602V361.398C105 444.441 172.559 512 255.602 512C338.645 512 406.203 444.441 406.203 361.398V150.602C406.203 67.5586 338.645 0 255.602 0ZM375.484 361.398C375.484 427.5 321.703 481.281 255.602 481.281C189.5 481.281 135.719 427.5 135.719 361.398V150.602C135.719 84.5 189.5 30.7188 255.602 30.7188C321.703 30.7188 375.484 84.5 375.484 150.602V361.398Z" fill="black"/>
-                            <g id="scroll">
-                                <path id="Vector_2" d="M255.605 101.852C247.121 101.852 240.246 108.727 240.246 117.211V187.906C240.246 196.387 247.121 203.266 255.605 203.266C264.086 203.266 270.965 196.387 270.965 187.906V117.211C270.965 108.727 264.09 101.852 255.605 101.852Z" fill="black"/>
-                            </g>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="512" height="512" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
+  <section id="particles-js" class="particles-js"></section>
+  <section class="section intro">
+    <div class="container">
+      <div class="wrapper">
+        <div class="section__img">
+          <img src="img/me.png" class="me" alt="me">
+          <a href="about.html" class="btn">Learn more
+          </a>
+          <svg class="mouse" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="mouse-clicker 1" clip-path="url(#clip0)">
+              <path id="Vector"
+                    d="M255.602 0C172.559 0 105 67.5586 105 150.602V361.398C105 444.441 172.559 512 255.602 512C338.645 512 406.203 444.441 406.203 361.398V150.602C406.203 67.5586 338.645 0 255.602 0ZM375.484 361.398C375.484 427.5 321.703 481.281 255.602 481.281C189.5 481.281 135.719 427.5 135.719 361.398V150.602C135.719 84.5 189.5 30.7188 255.602 30.7188C321.703 30.7188 375.484 84.5 375.484 150.602V361.398Z"
+                    fill="black"/>
+              <g id="scroll">
+                <path id="Vector_2"
+                      d="M255.605 101.852C247.121 101.852 240.246 108.727 240.246 117.211V187.906C240.246 196.387 247.121 203.266 255.605 203.266C264.086 203.266 270.965 196.387 270.965 187.906V117.211C270.965 108.727 264.09 101.852 255.605 101.852Z"
+                      fill="black"/>
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="512" height="512" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
 
-                    <p class="scroll vertical">
-                        scroll
-                    </p>
-                </div>
-                <div class="section-info">
-                    <h1 class="title">Hi,
-                        I'm Denis,
-                        web developer.
-                    </h1>
-                    <h2 class="suptitle">Front End Developer / Freelancer</h2>
-                </div>
-                <div class="section__button">
-                    <p>If animation bother you</p>
-                    <button class="btn" id="clicker">Click here</button>
-
-                </div>
-            </div>
+          <p class="scroll vertical">
+            scroll
+          </p>
         </div>
-    </section>
-    <section data-aos="fade-right" class="section candos">
-        <div class="container">
-            <div class="wrapper column">
-                <div class="section-header">
-                    <div class="section-header__title"><span>w</span><span>h</span><span>a</span><span>t</span> <span>i</span> <span>c</span><span>a</span><span>n</span> <span>d</span><span>o</span></div>
-                </div>
-
-                <div  class="cando">
-<!--                    <div class="cando__item">-->
-<!--                        <img src="img/iphone-app-development.png" class="devbg" alt="img">-->
-<!--                    </div>-->
-                    <div class="cando__item">
-                        <div class="accordion">
-                            <div class="accordion__item active" data-collapse="#ido_1">
-                                <div class="accordion-header">
-                                    <img class="accordion-header__icon" src="img/web-development.svg" alt="">
-                                    <div class="accordion-header__title">web development</div>
-                                </div>
-                                <div class="accordion-content" id="ido_1">
-                                    <p>I have 1 year of commercial experience in Vue.js/Nuxt.js and 1 year in Angular.</p>
-                                    <br>
-                                    <p>Strong knowledge and use of JavaScript, HTML5, CSS, SASS, SCSS, understanding and using the principles of SOLID, knowledge and using of BEM methodology.</p>
-                                    <br>
-                                    <p>
-                                        Knowledge of the JQuery, Bootstrap4 libraries, Angular Material. Knowledge Vuex+AXIOS/Fetch+Vue-router technologies, and also Nuxt.js frameworks.
-                                    </p>
-                                    <br>
-                                    <p>
-                                        Knowledge and good using of Angular+NgRX+RxJS.
-                                    </p>
-                                    <br>
-                                    <p>
-                                        I use GitHub/GitLub for VCS in all projects.
-                                    </p>
-                                    <br>
-                                    <p>Actively using of Gulp. I actively fulfill orders on the freelance market, create sites from 0 to 1, adjust markup, implement functionality, fully adapt sites for any devices. All of my works you can find at my GitHub repositories.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="accordion__item"  data-collapse="#ido_2">
-                                <div class="accordion-header">
-                                    <img class="accordion-header__icon" src="img/idea.svg" alt="">
-                                    <div class="accordion-header__title">Creativity</div>
-                                </div>
-                                <div class="accordion-content" id="ido_2">
-                                  <p>Thinking outside the box, goal-seeking approach - understand, solve, remember. I follow the trends in the web industry to be in the center of events. I carry out the task and immediately think how it can be improved, modified, accelerated. I can clearly follow the instructions, but if the instructions are vague then I’m not afraid to make a decision and take responsibility.</p>
-                                </div>
-                            </div>
-                            <div class="accordion__item" data-collapse="#ido_3">
-                                <div class="accordion-header" >
-                                    <img class="accordion-header__icon" src="img/website-design.svg" alt="">
-                                    <div class="accordion-header__title">Web Graphics Skills</div>
-                                </div>
-                                <div class="accordion-content" id="ido_3">
-                                 <p>I can work with Photoshop and Figma. I can create an application using the pixel perfect technique. If necessary, I can quickly fix any moment in the layout.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="section-info">
+          <h1 class="title">Hi,
+            I'm Denis,
+            web developer.
+          </h1>
+          <h2 class="suptitle">Senior Frontend Developer</h2>
         </div>
-    </section>
-    <section class="section looking">
-        <div class="container">
-            <div class="wrapper column">
-                <div data-aos="fade-right" class="section-header">
-                    <div class="section-header__title"><span>w</span><span>h</span><span>a</span><span>t</span> <span>i</span><span>'</span><span>m</span> <span>l</span><span>o</span><span>o</span><span>k</span><span>i</span><span>n</span><span>g</span> <span>f</span><span>o</span><span>r</span></div>
-                </div>
+        <div class="section__button">
+          <p>If animation bother you</p>
+          <button class="btn" id="clicker">Click here</button>
 
-                <div class="card">
-                    <div data-aos="fade-right" class="card__item">
-                        <div class="card__inner">
-                            <div class="card__image">
-                                <img src="img/card-developer.jpg" alt="">
-                            </div>
-                            <div class="card__text">Good Team</div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-down" class="card__item">
-                        <div class="card__inner">
-                            <div class="card__image">
-                                <img src="img/card-team.jpg" alt="">
-                            </div>
-                            <div class="card__text">Nice Office</div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-left" class="card__item">
-                        <div class="card__inner">
-                            <div class="card__image">
-                                <img src="img/card-activity.jpg" alt="">
-                            </div>
-                            <div class="card__text">Super activity</div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" class="card__item">
-                        <div class="card__inner">
-                            <div class="card__image">
-                                <img src="img/card-freelance.jpg" alt="">
-                            </div>
-                            <div class="card__text">Freelance orders</div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-left" class="card__item">
-                        <div class="card__inner">
-                            <div class="card__image">
-                                <img src="img/card-interesting.jpg" alt="">
-                            </div>
-                            <div class="card__text">Interesting projects</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#contact" class="btn goto">Contact me</a>
-            </div>
         </div>
-    </section>
-    <section class="section works">
-        <div class="container">
-            <div class="wrapper column">
-                <div data-aos="fade-up" class="section-header">
-                    <div class="section-header__title"><span>p</span><span>r</span><span>e</span><span>v</span><span>i</span><span>e</span><span>w</span><span>s</span> <span>o</span><span>f</span> <span>m</span><span>y</span> <span>w</span><span>o</span><span>r</span><span>k</span><span>s</span></div>
-                </div>
-
-                <div data-aos="fade-up" class="works">
-                    <div class="works__slider">
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/work14/work14-1.jpg" alt="work14">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">DutchSwap HomePage</div>
-                                    <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Nuxt.js</div>
-                                    <div class="slider-item__info-text">This project is written on the modern Nuxt.js framework and the botstrap 4 libraries. Implemented work with the backend, and in more detail: appeal to the server, receiving and using data from the database.</div>
-                                    <a href="works.html#dutch-landing" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/work13/work13-1.jpg" alt="work13">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">DutchSwap Studio</div>
-                                    <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Nuxt.js</div>
-                                    <div class="slider-item__info-text">This project is written on the modern Nuxt.js framework and the botstrap 4 libraries. Implemented work with the backend, and in more detail: appeal to the server, receiving and using data from the database.</div>
-                                    <a href="works.html#dutch-studio" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/work10/work10-1.jpg" alt="work10">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">SuperHero App</div>
-                                    <div class="slider-item__info-suptitle">Technology: Framework Angular</div>
-                                    <div class="slider-item__info-text">This project is written on Angular framework and the Angular Material library. In more detail: actively usage of RxJS, using superhero API.</div>
-                                    <a href="works.html#superhero" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-1.jpg" alt="work1">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Online shop</div>
-                                    <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Nuxt.js</div>
-                                    <div class="slider-item__info-text">This online store is written on the modern Nuxt.js framework and the botstrap 4 / bootstrapVie libraries. Implemented work with the backend, and in more detail: appeal to the server, receiving and using data from the database. The site is under active development.</div>
-                                    <a href="works.html#online-store" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/work12/work12-1.jpg" alt="work12">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">KanbanBord</div>
-                                    <div class="slider-item__info-suptitle">Technology: Native JavaScript</div>
-                                    <div class="slider-item__info-text">This project is written on JavaScript with component strategy. In more detail: actively usage of classes and ES6+ features.</div>
-                                    <a href="works.html#kanban" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/work11/work11-1.jpg" alt="work11">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">ToDo App on Angular</div>
-                                    <div class="slider-item__info-suptitle">Technology: Angular</div>
-                                    <div class="slider-item__info-text">This project is written on Angular framework and the Angular Material library. In more detail: actively usage of RxJS.</div>
-                                    <a href="works.html#angular-todo" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-8.jpg" alt="work8">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Posts</div>
-                                    <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Vuex+AXIOS+Vue-routing</div>
-                                    <div class="slider-item__info-text">This app is written on the Vue.js framework and it includes Vuex store. Completed AXIOS requests to the jsonplaceholder API and implemented Vue-routing. Also added pagination that makes 10 pages with 10 posts per page and filter that filtrate posts parallel by title and userId of user who left post. </div>
-                                    <a href="works.html#posts" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-9.jpg" alt="work9">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Todo application</div>
-                                    <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Vuex+Vue-routing</div>
-                                    <div class="slider-item__info-text">This app is written on the Vue.js framework and it includes Vuex store. Store completed by resource of the jsonplaceholder/todos API and implemented Vue-routing. The app contained notes with todo list inside that can be marked to done and you can add new note and new todo in it. Also you can remove note or todo in it. All actions calls modal window for confirm the action.</div>
-                                    <a href="works.html#todo" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-2.jpg" alt="work2">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">test task</div>
-                                    <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 & JSON server</div>
-                                    <div class="slider-item__info-text">This test task was performed using asynchronous functions. Work with the user database has been implemented, in more detail: obtaining an array of users, drawing them into a table, functionality for deleting and adding users, and also sorting by any category.</div>
-                                    <a href="works.html#test-task" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-7.jpg" alt="work3">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">coffee machine emulator</div>
-                                    <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 </div>
-                                    <div class="slider-item__info-text">Great emulator created using pure javascript. Functionality: greeting, choice of coffee, payment, money operations functional has been implemented - depositing funds, processing, issuing change if necessary, making coffee on a timer.</div>
-                                    <a href="works.html#coffee-machine" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/work7/work1.jpg" alt="work4">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Bootstrap4 Game Landing</div>
-                                    <div class="slider-item__info-suptitle">Technology: HTML5 & BOOTSTRAP4</div>
-                                    <div class="slider-item__info-text">Amazing page was written in Bootstrap4. Functionality: Full adaptive without css using code, working burger menu.</div>
-                                    <a href="works.html#bootstrap-land" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-6.jpg" alt="work5">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Landing Page</div>
-                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
-                                    <div class="slider-item__info-text">A wonderful landing adapted for all devices was created to order by freelance. The page is rich in animations and functionality: modal windows, sliders with preview pictures, burger menu, etc. Used gulp 4 own assembly, library JQuery, HTML5, CSS3, JavaScript.</div>
-                                    <a href="works.html#landing1" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-3.jpg" alt="work6">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Landing Page</div>
-                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
-                                    <div class="slider-item__info-text">Beautiful clean landing page was created with the help of a new gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery.</div>
-                                    <a href="works.html#landing2" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="works__slider-item slider-item">
-                            <div class="slider-wrapper">
-                                <div class="img">
-                                    <img src="img/works-4.jpg" alt="work7">
-                                </div>
-                                <div class="slider-item__info">
-                                    <div class="slider-item__info-title">Landing Page</div>
-                                    <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery </div>
-                                    <div class="slider-item__info-text">A simple, design landing page was created with the help of a new gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery. The site was created to order by freelance.</div>
-                                    <a href="works.html#landing3" target="_blank" class="btn">Look more</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <section data-aos="fade-right" class="section candos">
+    <div class="container">
+      <div class="wrapper column">
+        <div class="section-header">
+          <div class="section-header__title"><span>w</span><span>h</span><span>a</span><span>t</span> <span>i</span>
+            <span>c</span><span>a</span><span>n</span> <span>d</span><span>o</span></div>
         </div>
-    </section>
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="wrapper">
-                <div data-aos="fade-right" class="section-header">
-                    <div class="section-header__title"><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span> <span>m</span><span>e</span></div>
-                    <div class="section-header__subtitle">I am interested in working in a company especially with the ambitious or large projects. However, if you have other requests or questions, don't hesitate to contact me using contact form below. </div>
-                    <form action="https://formspree.io/xbjzkvje" method="POST" class="form" autocomplete="off">
-                        <input required type="text" name="name" class="w-49" placeholder="Name">
-                        <input required type="email" name="_replyto" class="w-49" placeholder="Email">
-                        <input required type="text" name="subject" class="w-100" placeholder="Subject">
-                        <textarea required type="text" name="message" class="w-100" placeholder="Message"></textarea>
-                        <button type="submit" class="btn">Send</button>
-                    </form>
-                </div>
 
-                <div data-aos="fade-left" class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948097.5007994254!2d34.46884910657116!3d49.9945070256811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1592568375053!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="cando">
+          <!--                    <div class="cando__item">-->
+          <!--                        <img src="img/iphone-app-development.png" class="devbg" alt="img">-->
+          <!--                    </div>-->
+          <div class="cando__item">
+            <div class="accordion">
+              <div class="accordion__item active" data-collapse="#ido_1">
+                <div class="accordion-header">
+                  <img class="accordion-header__icon" src="img/web-development.svg" alt="">
+                  <div class="accordion-header__title">web development</div>
                 </div>
-
+                <div class="accordion-content" id="ido_1">
+                  <p>Dedicated Software Engineer with over 4 years of experience in the different companies.
+                    Eager to offer a superb analitical and computer skills to help your company to develop and
+                    solve complicated tasks. In previous roles, recognized for top company-wide quality
+                    satisfaction rating (over 95%). Boosted production efficiency by 25% at companies and
+                    consistently delivered by customer needs at over 20% under budget.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item" data-collapse="#ido_4">
+                <div class="accordion-header">
+                  <img class="accordion-header__icon" src="img/web-development.svg" alt="">
+                  <div class="accordion-header__title">Tech Skills</div>
+                </div>
+                <div class="accordion-content" id="ido_4">
+                  <p>JavaScript, HTML, CSS, SASS, SCSS, Ajax, TypeScript, GIT, Angular Material,
+                    NgRx, NgXs, RxJS, Angular,
+                    Vue.js,
+                    Cypress, Nuxt.js,
+                    Jest,
+                    Angular Universal, Photoshop, Figma</p>
+                </div>
+              </div>
+              <div class="accordion__item" data-collapse="#ido_2">
+                <div class="accordion-header">
+                  <img class="accordion-header__icon" src="img/idea.svg" alt="">
+                  <div class="accordion-header__title">Creativity</div>
+                </div>
+                <div class="accordion-content" id="ido_2">
+                  <p>Thinking outside the box, goal-seeking approach - understand, solve, remember. I follow the trends
+                    in the web industry to be in the center of events. I carry out the task and immediately think how it
+                    can be improved, modified, accelerated. I can clearly follow the instructions, but if the
+                    instructions are vague then I’m not afraid to make a decision and take responsibility.</p>
+                </div>
+              </div>
+              <div class="accordion__item" data-collapse="#ido_3">
+                <div class="accordion-header">
+                  <img class="accordion-header__icon" src="img/website-design.svg" alt="">
+                  <div class="accordion-header__title">Web Graphics Skills</div>
+                </div>
+                <div class="accordion-content" id="ido_3">
+                  <p>I can work with Photoshop and Figma. I can create an application using the pixel perfect technique.
+                    If necessary, I can quickly fix any moment in the layout.</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+  <section class="section looking">
+    <div class="container">
+      <div class="wrapper column">
+        <div data-aos="fade-right" class="section-header">
+          <div class="section-header__title"><span>w</span><span>h</span><span>a</span><span>t</span>
+            <span>i</span><span>'</span><span>m</span>
+            <span>l</span><span>o</span><span>o</span><span>k</span><span>i</span><span>n</span><span>g</span>
+            <span>f</span><span>o</span><span>r</span></div>
+        </div>
+
+        <div class="card">
+          <div data-aos="fade-right" class="card__item">
+            <div class="card__inner">
+              <div class="card__image">
+                <img src="img/card-developer.jpg" alt="">
+              </div>
+              <div class="card__text">Good Team</div>
+            </div>
+          </div>
+          <div data-aos="fade-down" class="card__item">
+            <div class="card__inner">
+              <div class="card__image">
+                <img src="img/card-team.jpg" alt="">
+              </div>
+              <div class="card__text">Nice Office</div>
+            </div>
+          </div>
+          <div data-aos="fade-left" class="card__item">
+            <div class="card__inner">
+              <div class="card__image">
+                <img src="img/card-activity.jpg" alt="">
+              </div>
+              <div class="card__text">Super activity</div>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="card__item">
+            <div class="card__inner">
+              <div class="card__image">
+                <img src="img/card-freelance.jpg" alt="">
+              </div>
+              <div class="card__text">Freelance orders</div>
+            </div>
+          </div>
+          <div data-aos="fade-left" class="card__item">
+            <div class="card__inner">
+              <div class="card__image">
+                <img src="img/card-interesting.jpg" alt="">
+              </div>
+              <div class="card__text">Interesting projects</div>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn goto">Contact me</a>
+      </div>
+    </div>
+  </section>
+  <section class="section works">
+    <div class="container">
+      <div class="wrapper column">
+        <div data-aos="fade-up" class="section-header">
+          <div class="section-header__title">
+            <span>p</span><span>r</span><span>e</span><span>v</span><span>i</span><span>e</span><span>w</span><span>s</span>
+            <span>o</span><span>f</span> <span>m</span><span>y</span>
+            <span>w</span><span>o</span><span>r</span><span>k</span><span>s</span></div>
+        </div>
+
+        <div data-aos="fade-up" class="works">
+          <div class="works__slider">
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/work14/work14-1.jpg" alt="work14">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">DutchSwap HomePage</div>
+                  <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Nuxt.js</div>
+                  <div class="slider-item__info-text">This project is written on the modern Nuxt.js framework and the
+                    botstrap 4 libraries. Implemented work with the backend, and in more detail: appeal to the server,
+                    receiving and using data from the database.
+                  </div>
+                  <a href="works.html#dutch-landing" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/work13/work13-1.jpg" alt="work13">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">DutchSwap Studio</div>
+                  <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Nuxt.js</div>
+                  <div class="slider-item__info-text">This project is written on the modern Nuxt.js framework and the
+                    botstrap 4 libraries. Implemented work with the backend, and in more detail: appeal to the server,
+                    receiving and using data from the database.
+                  </div>
+                  <a href="works.html#dutch-studio" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/work10/work10-1.jpg" alt="work10">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">SuperHero App</div>
+                  <div class="slider-item__info-suptitle">Technology: Framework Angular</div>
+                  <div class="slider-item__info-text">This project is written on Angular framework and the Angular
+                    Material library. In more detail: actively usage of RxJS, using superhero API.
+                  </div>
+                  <a href="works.html#superhero" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/works-1.jpg" alt="work1">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">Online shop</div>
+                  <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Nuxt.js</div>
+                  <div class="slider-item__info-text">This online store is written on the modern Nuxt.js framework and
+                    the botstrap 4 / bootstrapVie libraries. Implemented work with the backend, and in more detail:
+                    appeal to the server, receiving and using data from the database. The site is under active
+                    development.
+                  </div>
+                  <a href="works.html#online-store" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/work12/work12-1.jpg" alt="work12">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">KanbanBord</div>
+                  <div class="slider-item__info-suptitle">Technology: Native JavaScript</div>
+                  <div class="slider-item__info-text">This project is written on JavaScript with component strategy. In
+                    more detail: actively usage of classes and ES6+ features.
+                  </div>
+                  <a href="works.html#kanban" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/work11/work11-1.jpg" alt="work11">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">ToDo App on Angular</div>
+                  <div class="slider-item__info-suptitle">Technology: Angular</div>
+                  <div class="slider-item__info-text">This project is written on Angular framework and the Angular
+                    Material library. In more detail: actively usage of RxJS.
+                  </div>
+                  <a href="works.html#angular-todo" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/works-8.jpg" alt="work8">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">Posts</div>
+                  <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Vuex+AXIOS+Vue-routing</div>
+                  <div class="slider-item__info-text">This app is written on the Vue.js framework and it includes Vuex
+                    store. Completed AXIOS requests to the jsonplaceholder API and implemented Vue-routing. Also added
+                    pagination that makes 10 pages with 10 posts per page and filter that filtrate posts parallel by
+                    title and userId of user who left post.
+                  </div>
+                  <a href="works.html#posts" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/works-9.jpg" alt="work9">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">Todo application</div>
+                  <div class="slider-item__info-suptitle">Technology: Framework Vue.js & Vuex+Vue-routing</div>
+                  <div class="slider-item__info-text">This app is written on the Vue.js framework and it includes Vuex
+                    store. Store completed by resource of the jsonplaceholder/todos API and implemented Vue-routing. The
+                    app contained notes with todo list inside that can be marked to done and you can add new note and
+                    new todo in it. Also you can remove note or todo in it. All actions calls modal window for confirm
+                    the action.
+                  </div>
+                  <a href="works.html#todo" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/works-2.jpg" alt="work2">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">test task</div>
+                  <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3 & JSON server</div>
+                  <div class="slider-item__info-text">This test task was performed using asynchronous functions. Work
+                    with the user database has been implemented, in more detail: obtaining an array of users, drawing
+                    them into a table, functionality for deleting and adding users, and also sorting by any category.
+                  </div>
+                  <a href="works.html#test-task" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/works-7.jpg" alt="work3">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">coffee machine emulator</div>
+                  <div class="slider-item__info-suptitle">Technology: JavaScript & HTML5 & CSS3</div>
+                  <div class="slider-item__info-text">Great emulator created using pure javascript. Functionality:
+                    greeting, choice of coffee, payment, money operations functional has been implemented - depositing
+                    funds, processing, issuing change if necessary, making coffee on a timer.
+                  </div>
+                  <a href="works.html#coffee-machine" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/work7/work1.jpg" alt="work4">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">Bootstrap4 Game Landing</div>
+                  <div class="slider-item__info-suptitle">Technology: HTML5 & BOOTSTRAP4</div>
+                  <div class="slider-item__info-text">Amazing page was written in Bootstrap4. Functionality: Full
+                    adaptive without css using code, working burger menu.
+                  </div>
+                  <a href="works.html#bootstrap-land" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/works-6.jpg" alt="work5">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">Landing Page</div>
+                  <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery</div>
+                  <div class="slider-item__info-text">A wonderful landing adapted for all devices was created to order
+                    by freelance. The page is rich in animations and functionality: modal windows, sliders with preview
+                    pictures, burger menu, etc. Used gulp 4 own assembly, library JQuery, HTML5, CSS3, JavaScript.
+                  </div>
+                  <a href="works.html#landing1" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/works-3.jpg" alt="work6">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">Landing Page</div>
+                  <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery</div>
+                  <div class="slider-item__info-text">Beautiful clean landing page was created with the help of a new
+                    gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery.
+                  </div>
+                  <a href="works.html#landing2" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+            <div class="works__slider-item slider-item">
+              <div class="slider-wrapper">
+                <div class="img">
+                  <img src="img/works-4.jpg" alt="work7">
+                </div>
+                <div class="slider-item__info">
+                  <div class="slider-item__info-title">Landing Page</div>
+                  <div class="slider-item__info-suptitle">Technology: Gulp 4 & JavaScript & HTML5 & CSS3 & JQuery</div>
+                  <div class="slider-item__info-text">A simple, design landing page was created with the help of a new
+                    gulp 4 own assembly. It actively uses the BEM methodology, a library of JQuery. The site was created
+                    to order by freelance.
+                  </div>
+                  <a href="works.html#landing3" target="_blank" class="btn">Look more</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="wrapper">
+        <div data-aos="fade-right" class="section-header">
+          <div class="section-header__title">
+            <span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+            <span>m</span><span>e</span></div>
+          <div class="section-header__subtitle">I am interested in working in a company especially with the ambitious or
+            large projects. However, if you have other requests or questions, don't hesitate to contact me using contact
+            form below.
+          </div>
+          <form action="https://formspree.io/xbjzkvje" method="POST" class="form" autocomplete="off">
+            <input required type="text" name="name" class="w-49" placeholder="Name">
+            <input required type="email" name="_replyto" class="w-49" placeholder="Email">
+            <input required type="text" name="subject" class="w-100" placeholder="Subject">
+            <textarea required type="text" name="message" class="w-100" placeholder="Message"></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+
+        <div data-aos="fade-left" class="map">
+          <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948097.5007994254!2d34.46884910657116!3d49.9945070256811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1592568375053!5m2!1sru!2sua"
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </main>
 <footer class="footer">
-    <div class="container">
-        <div class="wrapper column">
-            <div class="footer__item">
-                <ul class="social">
-                   <li class="social__item"><a target="_blank" href="https://www.facebook.com/profile.php?id=100007477698524"><i class="fab fa-facebook"></i></a></li>
-                   <li class="social__item"><a target="_blank" href="https://www.instagram.com/sokol1life/"><i class="fab fa-instagram"></i></a></li>
-                   <li class="social__item"><a target="_blank" href="https://www.linkedin.com/in/ден-сокол-6131a4196/"><i class="fab fa-linkedin-in"></i></a></li>
-                   <li class="social__item"><a target="_blank" href="https://github.com/DenSokolDeveloper"><i class="fab fa-github"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer__item">
-                <div class="footer-header">
-                    <div class="title">need <b>an</b> app <br>
-                    website<br>
-                    <b>store?</b></div>
-                </div>
-                <ul class="footer-contact">
-                    <li class="title">contact me</li>
-                    <li>
-                        <i class="far fa-envelope"></i>
-                        <a href="mailto:sokold3@gmail.com" class="mail">sokold3@gmail.com</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone-alt"></i>
-                        <a href="tel:+38 (095) 010 88 85" class="phone">+380950108885</a>
-                    </li>
-                    <li>
-                        <i class="fab fa-skype"></i>
-                        <a href="skype:den.sokol" class="skype">den.sokol</a>
-                    </li>
-                </ul>
-            </div>
+  <div class="container">
+    <div class="wrapper column">
+      <div class="footer__item">
+        <ul class="social">
+          <li class="social__item"><a target="_blank" href="https://www.facebook.com/profile.php?id=100007477698524"><i
+                class="fab fa-facebook"></i></a></li>
+          <li class="social__item"><a target="_blank" href="https://www.instagram.com/sokol1life/"><i
+                class="fab fa-instagram"></i></a></li>
+          <li class="social__item"><a target="_blank" href="https://www.linkedin.com/in/ден-сокол-6131a4196/"><i
+                class="fab fa-linkedin-in"></i></a></li>
+          <li class="social__item"><a target="_blank" href="https://github.com/DenSokolDeveloper"><i
+                class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <div class="footer-header">
+          <div class="title">need <b>an</b> app <br>
+            website<br>
+            <b>store?</b></div>
         </div>
+        <ul class="footer-contact">
+          <li class="title">contact me</li>
+          <li>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:sokold3@gmail.com" class="mail">sokold3@gmail.com</a>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+38 (095) 010 88 85" class="phone">+380950108885</a>
+          </li>
+          <li>
+            <i class="fab fa-skype"></i>
+            <a href="skype:den.sokol" class="skype">den.sokol</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </footer>
 
 <script src="js/particles.js"></script>
